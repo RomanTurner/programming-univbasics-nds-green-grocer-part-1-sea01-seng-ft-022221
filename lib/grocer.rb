@@ -15,13 +15,13 @@ def consolidate_cart(cart)
   count = 0 
   while count < cart.length 
     new_item = find_item_by_name_in_collection(cart[count][:item], new_cart)
-      if new_item != nil
+      if new_item 
         new_item[:count] += 1 
         else
         new_item = {
           item: cart[count][:item],
           price: cart[count][:price],
-          clearence: cart[count][:clearence],
+          clearence: cart[count][:clearance],
           count: 1
         }
         new_cart << new_item
