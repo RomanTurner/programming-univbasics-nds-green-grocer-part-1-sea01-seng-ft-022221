@@ -1,6 +1,14 @@
 require 'pry'
 def find_item_by_name_in_collection(name, collection)
-  
+ item_found = {}
+  collection.each do |hash|
+  hash.each do |key, value|
+    hash[key] == name 
+    item_found = hash
+  end 
+  item_found
+end 
+
 end
 
 
@@ -16,12 +24,7 @@ end
 =begin
 
 
-collection.each do |hash|
-  hash.each do |key, value|
-    hash[key] == name 
-    item_found = hash
-  end 
-end 
+
 
 counter = 0 
   while counter < collection.length 
