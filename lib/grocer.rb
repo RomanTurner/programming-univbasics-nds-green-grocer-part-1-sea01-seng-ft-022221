@@ -3,8 +3,9 @@ def find_item_by_name_in_collection(name, collection)
  item_found = {}
   collection.each do |hash|
   hash.each do |key, value|
-    name == hash[value] ?
+   if name == hash[value]
     item_found = hash
+  end 
   end 
   item_found
 end 
