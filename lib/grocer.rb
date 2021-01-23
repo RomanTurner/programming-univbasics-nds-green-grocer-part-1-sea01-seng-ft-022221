@@ -1,15 +1,11 @@
 require 'pry'
 def find_item_by_name_in_collection(name, collection)
-
-  collection.each do |hash|
-  hash.each do |key, value|
-   if hash[key] == name
-    return hash
-  else 
-    return nil
+ while counter < collection.length 
+  if collection[counter][:item] == name
+    return collection[counter]
   end 
-  end 
-end 
+  counter += 1 
+end
 end
 
 
@@ -28,10 +24,5 @@ end
 
 
 counter = 0 
-  while counter < collection.length 
-  if collection[counter][:item] == name
-    return collection[counter]
-  end 
-  counter += 1 
-end
+ 
 =end 
