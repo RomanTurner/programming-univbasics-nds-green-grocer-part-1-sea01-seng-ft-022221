@@ -11,6 +11,22 @@ end
   item_hash_found
 end
 
+
+
+let(:test_cart) do
+      [
+        { :item => "DOG FOOD" },
+        { :item => "WINE" },
+        { :item => "STRYCHNINE" }
+      ]
+
+
+
+
+
+
+
+
 def consolidate_cart(cart)
   # Consult README for inputs and outputs
   #
