@@ -5,6 +5,8 @@ def find_item_by_name_in_collection(name, collection)
   hash.each do |key, value|
    if hash[key] == name
     return hash
+  else 
+    return nil
   end 
   end 
 end 
