@@ -4,7 +4,7 @@ def find_item_by_name_in_collection(name, collection)
   collection.each do |hash|
   hash.each do |key, value|
    if hash[key] == name
-    return hash[key]
+    return hash
   end 
   end 
 end 
