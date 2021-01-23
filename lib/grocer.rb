@@ -5,26 +5,12 @@ def find_item_by_name_in_collection(name, collection)
     hash.each do |key, value|
         if value = name 
           item_hash_found = hash
+          binding.pry
       end 
     end 
 end 
   item_hash_found
 end
-
-
-
-let(:test_cart) do
-      [
-        { :item => "DOG FOOD" },
-        { :item => "WINE" },
-        { :item => "STRYCHNINE" }
-      ]
-
-
-
-
-
-
 
 
 def consolidate_cart(cart)
