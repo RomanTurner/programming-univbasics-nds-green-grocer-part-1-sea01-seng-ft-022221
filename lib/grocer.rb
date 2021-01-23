@@ -1,16 +1,12 @@
 require 'pry'
 def find_item_by_name_in_collection(name, collection)
-  item_hash_found = {}
-  collection.each do |hash|
-    hash.each do |key, value|
-        if value = name 
-          item_hash_found = hash
-          binding.pry
-
-      end 
-    end 
-end 
-  item_hash_found
+  counter = 0 
+  while counter < collection.length 
+  if collection[counter][:item] == name
+    return collection[counter]
+  end 
+  counter += 1 
+end
 end
 
 
@@ -21,6 +17,18 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
 end
+=begin
 
 
-  
+collection.each do |hash|
+  hash.each do |key, value|
+    hash[key] == name 
+    item_found = hash
+  end 
+end 
+
+
+
+
+
+  =end 
