@@ -7,6 +7,7 @@ def find_item_by_name_in_collection(name, collection)
         if value = name 
           item_hash_found = hash
           binding.pry
+        end
       end 
     end 
 end 
